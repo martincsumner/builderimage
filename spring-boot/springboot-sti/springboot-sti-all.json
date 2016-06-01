@@ -4,6 +4,15 @@
    "metadata": {
       "name": "springboot-sti"
    },
+   "parameters": [ 
+      {
+         "description": "binary build path",
+         "name": "BINARY_PATH",
+         "value": "",
+         "displayName": "binary path",
+         "required": true
+      }   
+   ],
    "items": [
       {
          "kind": "BuildConfig",
@@ -56,6 +65,11 @@
 
             "resources": {}
          }
+
+
+
+
+
       
       },
       {
@@ -577,6 +591,5 @@
             }
          ]
       }
-
    ]
 }
