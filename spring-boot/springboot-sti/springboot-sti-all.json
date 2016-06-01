@@ -4,6 +4,16 @@
    "metadata": {
       "name": "springboot-sti"
    },
+   "parameters" :[
+         {
+               "description": "binary build path",
+               "name": "BINARY_PATH",
+               "value": "",
+               "displayName": "binary path",
+               "required": true
+            },
+   ],
+
    "items": [
       {
          "kind": "BuildConfig",
@@ -53,8 +63,10 @@
                   "name": "springboot-sti:latest"
                }
             },
+
             "resources": {}
          }
+      
       },
       {
          "kind": "ImageStream",
@@ -88,6 +100,7 @@
             ]
          }
       },
+
       {
          "kind": "Template",
          "apiVersion": "v1",
@@ -151,7 +164,8 @@
             {
                "description": "binary to build",
                "name": "BUILD_BINARY_PATH",
-               "value": "http://192.168.99.1:8081/nexus/content/repositories/macmartin/org/springframework/ms-spring-boot-docker/0.1.0/ms-spring-boot-docker-0.1.0.jar"
+               "value": "",
+               "required":true
             } 
          ],
          "objects": [
