@@ -4,15 +4,6 @@
    "metadata": {
       "name": "springboot-sti"
    },
-   "parameters": [ 
-      {
-         "description": "binary build path",
-         "name": "BINARY_PATH",
-         "value": "",
-         "displayName": "binary path",
-         "required": true
-      }   
-   ],
    "items": [
       {
          "kind": "BuildConfig",
@@ -20,6 +11,15 @@
          "metadata": {
             "name": "springboot-sti"
          },
+          "parameters": [ 
+            {
+               "description": "binary build path",
+               "name": "BINARY_PATH",
+               "value": "",
+               "displayName": "binary path",
+               "required": true
+            }   
+         ],
          "spec": {
             "triggers": [
                {
@@ -64,13 +64,7 @@
             },
 
             "resources": {}
-         }
-
-
-
-
-
-      
+         }      
       },
       {
          "kind": "ImageStream",
